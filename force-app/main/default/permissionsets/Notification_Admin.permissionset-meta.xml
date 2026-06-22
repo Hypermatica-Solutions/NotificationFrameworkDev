@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Notification Admin</label>
+    <description>Full access to configure and manage notification rules, templates, channels, and logs.</description>
+
+    <!-- ===== OBJECT PERMISSIONS ===== -->
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>NotificationRule__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>NotificationChannel__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>NotificationTemplate__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>NotificationLog__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <!-- ===== NOTIFICATIONRULE__C — optional fields only ===== -->
+    <!-- Required fields excluded: Rule_Label__c, Object_API_Name__c, Condition_Class__c, Trigger_Event__c, Recipient_Strategy__c -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Priority__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Watched_Fields__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Condition_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Recipient_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Recipient_Resolver_Class__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Cooldown_Minutes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Description__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationRule__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ===== NOTIFICATIONCHANNEL__C — optional fields only ===== -->
+    <!-- Required fields excluded: Channel_Type__c, Template__c -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationChannel__c.Active__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationChannel__c.Channel_Config__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ===== NOTIFICATIONTEMPLATE__C — optional fields only ===== -->
+    <!-- Required fields excluded: Template_Key__c, Channel_Type__c -->
+
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Bell_Body__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Subject__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Body__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Email_Template_Name__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Body_Is_HTML__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>NotificationTemplate__c.Language__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ===== NOTIFICATIONLOG__C — optional fields only (read only) ===== -->
+    <!-- Required fields excluded: Rule__c, Channel__c, Channel_Type__c, Record_Id__c, Status__c -->
+
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Recipient_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Error_Message__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Retry_Count__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Sent_At__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Suppression_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Cooldown_Key__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ===== TAB VISIBILITY ===== -->
+
+    <tabSettings>
+        <tab>NotificationRule__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>NotificationChannel__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>NotificationTemplate__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>NotificationLog__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+
+</PermissionSet>

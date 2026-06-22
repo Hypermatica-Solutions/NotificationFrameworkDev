@@ -1,0 +1,83 @@
+# ─── Salesforce DX ──────────────────────────────────────────────────────────
+.sf/
+.sfdx/
+.localdevserver/
+deploy-options.json
+**/package.xml.bak
+
+# ─── LWC ────────────────────────────────────────────────────────────────────
+**/lwc/jsconfig.json
+**/lwc/__tests__/coverage/
+
+# ─── Node / npm ─────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+.yarn/
+*.tgz
+.node_repl_history
+
+# ─── Test & Coverage ────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.lcov
+
+# ─── Build Outputs ───────────────────────────────────────────────────────────
+dist/
+build/
+out/
+.cache/
+
+# ─── Linting / Formatting ────────────────────────────────────────────────────
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# ─── Static Analysis ─────────────────────────────────────────────────────────
+.pmdCache
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── Environment & Secrets ───────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ─── VS Code ─────────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
+# ─── JetBrains IDEs ──────────────────────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ─── macOS ───────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ─── Windows ─────────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ─── Python (Salesforce Functions) ───────────────────────────────────────────
+**/__pycache__/
+**/.venv/
+**/venv/
+*.pyc
+*.pyo

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Notification Log</label>
+    <listViews>
+        <fullName>RecentlyViewed</fullName>
+        <columns>Rule__c</columns>
+        <columns>Channel_Type__c</columns>
+        <columns>Record_Id__c</columns>
+        <columns>Recipient_User__c</columns>
+        <columns>Status__c</columns>
+        <columns>Sent_At__c</columns>
+        <filterScope>RecentlyViewed</filterScope>
+        <label>Recently Viewed</label>
+    </listViews>
+    <nameField>
+        <displayFormat>NL-{000000}</displayFormat>
+        <label>Notification Log Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Notification Logs</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Rule__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Channel_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Recipient_User__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sent_At__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Error_Message__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

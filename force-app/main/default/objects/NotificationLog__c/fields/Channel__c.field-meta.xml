@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <label>Channel</label>
+    <referenceTo>NotificationChannel__c</referenceTo>
+    <relationshipLabel>Notification Logs</relationshipLabel>
+    <relationshipName>Notification_Logs</relationshipName>
+    <required>true</required>
+    <type>Lookup</type>
+</CustomField>

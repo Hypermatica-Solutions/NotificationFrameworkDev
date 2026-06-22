@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <label>Notification Template</label>
+    <listViews>
+        <fullName>RecentlyViewed</fullName>
+        <columns>Template_Key__c</columns>
+        <columns>Channel_Type__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Email_Template_Name__c</columns>
+        <columns>Bell_Body__c</columns>
+        <filterScope>RecentlyViewed</filterScope>
+        <label>Recently Viewed</label>
+    </listViews>
+    <nameField>
+        <label>Notification Template Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Notification Templates</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Template_Key__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Channel_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Subject__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Email_Template_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bell_Body__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

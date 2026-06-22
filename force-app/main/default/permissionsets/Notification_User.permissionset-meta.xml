@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Notification User</label>
+    <description>Read-only access to notification logs. Assigned to end users who receive notifications.</description>
+
+    <!-- Users can only read their own notification logs -->
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>NotificationLog__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+
+    <!-- ===== NOTIFICATIONLOG__C — optional fields only (read only) ===== -->
+    <!-- Required fields excluded: Rule__c, Channel__c, Channel_Type__c, Record_Id__c, Status__c -->
+
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Recipient_User__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Sent_At__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>NotificationLog__c.Suppression_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+
+    <!-- ===== TAB VISIBILITY ===== -->
+
+    <tabSettings>
+        <tab>NotificationLog__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+
+</PermissionSet>

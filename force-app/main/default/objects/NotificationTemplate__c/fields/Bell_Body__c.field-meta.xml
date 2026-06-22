@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bell_Body__c</fullName>
+    <label>Bell Body</label>
+    <description>Plain text body for bell (in-app) notifications. Max 255 characters — Salesforce Custom Notifications API limit. Supports {{{token}}} replacement. Used by BellChannelHandler at runtime.</description>
+    <length>255</length>
+    <type>Text</type>
+    <unique>false</unique>
+    <externalId>false</externalId>
+</CustomField>

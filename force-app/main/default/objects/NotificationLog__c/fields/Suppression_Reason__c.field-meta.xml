@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Suppression_Reason__c</fullName>
+    <label>Suppression Reason</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cooldown</fullName>
+                <default>false</default>
+                <label>Cooldown</label>
+            </value>
+            <value>
+                <fullName>FLS</fullName>
+                <default>false</default>
+                <label>FLS</label>
+            </value>
+            <value>
+                <fullName>NoRecipients</fullName>
+                <default>false</default>
+                <label>NoRecipients</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

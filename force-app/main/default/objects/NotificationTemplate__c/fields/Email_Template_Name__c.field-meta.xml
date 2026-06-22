@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email_Template_Name__c</fullName>
+    <label>Email Template Name</label>
+    <description>Developer Name of the Salesforce Email Template to use as the email body. When set, the code fetches the template body from the org Email Template instead of the Body field. Our {{{token}}} merge tokens are still resolved on top of the fetched body.</description>
+    <length>255</length>
+    <type>Text</type>
+    <unique>false</unique>
+    <externalId>false</externalId>
+</CustomField>

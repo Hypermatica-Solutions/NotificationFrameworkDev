@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>NotificationRule__c</defaultLandingTab>
+    <description>Admin app for managing notification rules, templates, channels, and delivery logs.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Notification Framework</label>
+    <navType>Standard</navType>
+    <tabs>NotificationRule__c</tabs>
+    <tabs>NotificationChannel__c</tabs>
+    <tabs>NotificationTemplate__c</tabs>
+    <tabs>NotificationLog__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>
